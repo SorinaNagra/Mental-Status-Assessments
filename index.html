@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Mental Status Assessments</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">S. Nagra</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Mental Status Assessments</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Mental Status Assessments</h1>
+
+</div>
+
+
+<p>The mental status assessment incorporates subjective client data thought self- report and the clinician’s objective observations to describe the client’s current mental state. This is used to establish a baseline, evaluate change and efficacy of treatment. (Gatkowski, 2014)</p>
+<div id="appearance-and-behaviour" class="section level2">
+<h2>Appearance and Behaviour</h2>
+<div id="appearance" class="section level3">
+<h3>Appearance:</h3>
+<p>Appearance is a physical description of the client based on observations</p>
+<ul>
+<li>Do they look their stated age?
+<ul>
+<li>Older: may be do to medical conditions, substance abuse or uncontrolled mental illness (Voss &amp; Das, 2020)</li>
+<li>Youthful may be due to developmental delay or age- inappropriate dress</li>
+</ul></li>
+<li>Clothing: what the individual is wearing, appropriateness and condition of clothing
+<ul>
+<li>Inappropriate attire indicative of disorientation (Gatkowski, 2014)</li>
+<li>Are they dressed in an age appropriate manner (Voss &amp; Das, 2020)</li>
+</ul></li>
+<li>Build: is the individual thin, obese, athletic or medium build</li>
+<li>Grooming and hygiene is indicative of a person’s functioning and ability to perform ADLs (Voss &amp; Dass, 2020)
+<ul>
+<li>malodorous, unkempt, dirty</li>
+<li>Appropriate</li>
+<li>Adequate</li>
+<li>Disheveled: untidy or messy
+<ul>
+<li>Indicative of depression, neurocognitive impairment, negative symptoms of schizophrenia</li>
+</ul></li>
+<li>Poor hygiene indicative of poor functioning (Voss &amp; Das, 2020)</li>
+</ul></li>
+<li>Distinguishing features (Voss &amp; Dass, 2020: RNAO, 2015)
+<ul>
+<li>tattoos or scars: May be indicative of personality, history or behaviour (Voss &amp; Das, 2020)</li>
+<li>Scars: old/ significant injury, accidental trauma, harm caused by another individual, or self- induced harm</li>
+<li>Self- inflicted injury: superficial cutting or injury from past suicide attmepts</li>
+<li>needle tracks drug use</li>
+</ul></li>
+</ul>
+</div>
+<div id="behaviour" class="section level3">
+<h3>Behaviour</h3>
+<p>Description of the patients manner during the interview (Voss &amp; Das, 2020)</p>
+<ul>
+<li><p>Eye contact</p>
+<ul>
+<li>Good</li>
+<li>Fleeting</li>
+<li>None</li>
+</ul></li>
+<li><p>Psychomotor</p>
+<ul>
+<li>Agitation/ hyperkinesia</li>
+<li>Changes in behaviour: combative attitude, tachycardia, sweating, tremor, repetitive movements (Vieta et al, 2017)</li>
+<li>Restlessness, pacing, shaking, fidgeting (Wong &amp; Leventhal, 2015)</li>
+<li>Wringing of hands, inability to sit still (Norris et al, 2016)</li>
+<li>Take not of any tics: sudden, repetitive movement of eyes, extremity or trunk (Gatkowski, 2014)</li>
+</ul></li>
+<li><p>Retardation: slow movements (RNAO, 2015)</p></li>
+<li><p>Catatonia: immobility/ muscle rigidity (Norris et al, 2016)</p>
+<ul>
+<li>Note waxy flexibility: a person will maintain a posture for a long period of time after being molded into it. (Gatkowski, 2014)</li>
+</ul></li>
+<li><p>Parkinsonism: pill-rolling, Bradykinesia, rigidity (Voss &amp; Das, 2020)</p></li>
+<li><p>extrapyramidal side effects (EPS) from antipsychotics are rigidity, tremors, and tics such as teeth grinding, lip-smacking, or tongue protrusions (Voss &amp; Das, 2020)</p></li>
+<li><p>Acute dystonic reaction sudden rigidity after antipsychotic administrationL life threatening if involving the laryngeal muscles (Voss &amp; Das, 2020)</p></li>
+<li><p>Disheveled, indicate self- neglect or preoccupation with other influence (Gatkowski, 2014)</p></li>
+<li><p>Slouched posturing + downcast affect may indicate depression</p></li>
+<li><p>Agitation indicative of anxiety or hypomania</p></li>
+<li><p>Attitude towards interviewer (2009)</p>
+<ul>
+<li>Pleasant</li>
+<li>Engaged</li>
+<li>Open</li>
+<li>Guarded: offered little during interaction</li>
+<li>Suspicious</li>
+<li>Hostile/ irritability can occur with anxiety</li>
+<li>May present with underlying irritability: always present</li>
+</ul></li>
+<li><p>Description of interaction</p>
+<ul>
+<li>Cooperative</li>
+<li>Avoidant</li>
+<li>Selectively mute</li>
+<li>Unable to redirect, may be acutely responding to internal stimuli or may be indicative of manic symptoms (Voss &amp; Das, 2020)</li>
+</ul></li>
+</ul>
+<p>Distress and discomfort may be due to medical or mental illness or indicate the circumstances if the patient was brought to the hospital against their will (Voss &amp; Das, 2020)</p>
+<p>Note: monitor for gestures: head tilting, glancing, waving that may indicate client is internally preoccupied and responding to internal stimuli (Gatkowski, 2014)</p>
+<ul>
+<li>Is the behaviour appropriate for the situation? (Voss &amp; Das, 2020)
+<ul>
+<li>Involuntary admissions may be uncooperative</li>
+<li>Unusual if the patient is smiling and laughing in this situation</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="mood-and-affect" class="section level2">
+<h2>Mood and Affect</h2>
+<div id="mood" class="section level3">
+<h3>Mood</h3>
+<ul>
+<li>Mood is a subjective report of the client’s their emotional state (Voss &amp; Das, 2020)
+<ul>
+<li>appropriate/ inappropriate for the situation</li>
+<li>Euthymic: normal rage in mood: absence of depressive or elevated mood</li>
+<li>Euphoric/ elated</li>
+<li>Dysphoric: negative mood, uncomfortable, unhappiness, dissatisfied with self of uneasy (Gatkowski, 2014)</li>
+</ul></li>
+<li>How is your mood? Can you elaborate? Can you describe your day?</li>
+<li>Rate the person’s mood out of 10, with 10 being the greatest</li>
+</ul>
+</div>
+<div id="affect" class="section level3">
+<h3>Affect</h3>
+<ul>
+<li>A description of the clients expression (Gatkowski, 2014; RNAO, 2017)
+<ul>
+<li>Congruent: consistent with expressed thoughts vs. incongruent</li>
+<li>Full rage: emotions are appropriately expressed</li>
+<li>Constricted: little variation in expression</li>
+<li>Flat : absence of expression</li>
+<li>blunted : limited expression</li>
+<li>Labile: rapid/ abrupt changes in range or expressed emotions</li>
+<li>Stable: absence of rapid changes</li>
+<li>Appropriate: consistent with their mood and accompanying ideas</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="speech" class="section level2">
+<h2>Speech</h2>
+<ul>
+<li>Verbalization: the amount someone speaks (Norris et al, 2016)
+<ul>
+<li>Poverty of speech</li>
+<li>Hyperverbal</li>
+</ul></li>
+<li>Fluency
+<ul>
+<li>Indicative of language skills or a person’s ability to understand/ generate speech</li>
+</ul></li>
+<li>Rate
+<ul>
+<li>Slow vs. pressured (Voss &amp; Das, 2020)</li>
+<li>Response time
+<ul>
+<li>Long pauses before answering questions (RNAO, 2017)</li>
+<li>Hesitant (RNAO, 2017)</li>
+</ul></li>
+</ul></li>
+<li>Rhythm
+<ul>
+<li>Monotone (RNAO, 2017)</li>
+<li>Stuttering (RNAO, 2017)</li>
+</ul></li>
+<li>Volume
+<ul>
+<li>Quiet: depressed/ withdrawn (Voss &amp; Das, 2020)</li>
+<li>Loud: agitated (Voss &amp; Das, 2020)</li>
+</ul></li>
+<li>Tone
+<ul>
+<li>Aggressive, intensity, child- like (Voss &amp; Das, 2020)</li>
+</ul></li>
+<li>Articulation (clear, mumbled, slurred)(RNAO, 2017)</li>
+<li>Are they able to make their needs known?</li>
+</ul>
+</div>
+<div id="thought-and-perception" class="section level2">
+<h2>Thought and perception</h2>
+<p>Form involves the flow of ideas</p>
+<p>Content involves describing the person’s ideas or what a person thinks: includes delusions. Subjective data, content of thoughts as determined by the client’s oral report (Voss &amp; Das, 2020)</p>
+<p>Document topic*</p>
+<p>Suicidal or homicidal ideations (intent, plan, access to means, time-frame) (RNAO, 2017)* Talk more about this under risk assessment</p>
+<p>Delusions: false fixed belief (RNAO, 2017) On admission, the client’s recollection of events need to be validated through another person, often a close family member who can confirm or contradict beliefs.</p>
+<ul>
+<li>Delusions of control: belief that one’s thoughts or feelings are influenced by an utaize force (Gatkowski, 2014)
+<ul>
+<li>Thought insertion: belief implanted into one’s head by an external force (TV, another person, etc)(Gatkowski, 2014)
+<ul>
+<li>Withdrawal: belief someone or something is taking their thoughts away.</li>
+</ul></li>
+<li>Thought broadcasting: belief that others can know one’s thoughts (Gatkowski, 2014)</li>
+<li>Ideas of reference: belief of personal involvement in external event (Belief that a person on television is talking to them/ about them) (RNAO, 2017)</li>
+<li>Does the radio or television speak to you? ()</li>
+</ul></li>
+<li>Paranoid delusions: irrational distrust or fear that someone intends to harm them
+<ul>
+<li>Are you worried someone had been following or spying on you? (Voss &amp; Das, 2020)<br />
+</li>
+</ul></li>
+<li>Persecutory delusions: belief that one is being harmed in some way. Watched, manipulated, discriminate against, etc.</li>
+<li>Bizarre delusions/ implausible beliefs: “A rat ran across the floor and up into my stomach” “the light communicates with me”</li>
+<li>Somatic delusions: false belief about bodily functions (Gatkowski, 2014)
+<ul>
+<li>Common: belief that they are pregnant, in reality are bloated or constipated, common in both males and females</li>
+</ul></li>
+<li>Delusions of grandeur: belief that one holds power or influence
+<ul>
+<li>Ask about occupation or influence</li>
+</ul></li>
+<li>Religious delusions: belief they are being spoken to by god, are an agent of a greater being (Gatkowski, 2014)</li>
+<li>Nihilism: belief that one is dead/ non- existent(Gatkowski, 2014)</li>
+<li>Erotomania: belief that a public figure or other person unknown to the individual is in a relationship with them (Gatkowski, 2014)</li>
+</ul>
+<p>(Norris et al, 2016) * Do you have images in your head you cannot get out? * Do you have intense or irrational fears? * Do you think people are trying to hurt you in some way? Can you specify who? * Have you ever heard things others have not?</p>
+<ul>
+<li><p>Depressive cognition: guilt/ hopelessness (RNAO, 2017)</p></li>
+<li><p>Obsession: unwanted recurring thoughts (RNAO, 2017)</p></li>
+<li><p>Phobia: Strong/ persistent fear (RNAO, 2017)</p></li>
+<li><p>Thought process: a description of how the patient thinks or the organization of their thoughts (Voss &amp; Das, 2020)</p>
+<ul>
+<li>Normal: linear/ goal oriented (Voss &amp; Das, 2020)</li>
+<li>Loosening of association: no logical relationship between ideas, jumps between unconnected topics (Gatkowski, 2014)</li>
+<li>Circumstantial: includes indirect/ unnecessary thoughts and details but eventually answers the question/ returns to original topic (Gatkowski, 2014)</li>
+<li>Tangential: person moves away form the topic and does not answer the original question/ Return to main topic(Gatkowski, 2014; Voss &amp; Das, 2020 )</li>
+<li>Thought blocking: pause/ disturbance in one’s train of thought. (Gatkowski, 2014)</li>
+<li>Flight of ideas: frequent shifts between topics, rapid verbalization</li>
+<li>Loose/ disorganized: no train of thought to follow (Voss &amp; Das, 2020)</li>
+<li>Word salad: incoherent mixture of words and phrases (Gatkowski, 2014)v</li>
+<li>Echolalia: repetition of words or phrases said by others (Gatkowski, 2014)</li>
+<li>Pressured speech: increased rate and volume of speech, difficult to interrupt (Gatkowski, 2014)</li>
+<li>Poverty of thought: provides little or vague responses during assessment. Lack of elaboration of ideas.</li>
+<li>Preservation: Patient returns to the same topic no matter the question (Voss &amp; Das, 2020)
+<ul>
+<li>document topic associated with type of thought</li>
+</ul></li>
+<li>Incoherence: unintelligible speech</li>
+<li>Rumination: repetitive and passive focus
+<ul>
+<li>I.e Rumination of hopelessness (Michl et al, 2013)</li>
+</ul></li>
+</ul></li>
+</ul>
+<div id="perception" class="section level3">
+<h3>Perception</h3>
+<p>Descriptions of one’s experience, the client’s description of their perception of sensory stimuli or lack thereof.</p>
+<ul>
+<li>Hallucinations: interpretation/ experience of sensory perception in the absence of external stimuli</li>
+<li>Can be auditory, visual, tactile, olfactory or gustatory
+<ul>
+<li>Have patients describe their experience and test if they can distinguish between reality and hallucination</li>
+<li>Command hallucinations: person perceives a command that the individual feels obligated to obey</li>
+<li>Have you heard or seen something others don’t seem to? ()</li>
+<li>If they hear voices
+<ul>
+<li>Do they recognize the voices? How many?</li>
+<li>What are the voices telling them?</li>
+<li>Describe your experience?</li>
+</ul></li>
+</ul></li>
+<li>Does the client appear internally preoccupied?
+<ul>
+<li>Responding to internal stimuli: laughing to self, speaking to self, etc.</li>
+</ul></li>
+<li>Illusion: misinterpretation of real stimuli
+<ul>
+<li>Thinking that the wind is a voice calling them, or that a piece of clothing is an insect Pressured speech: increased rate and volume of speech, difficult to interrupt (Gatkowski, 2014)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="risk-assessment" class="section level2">
+<h2>Risk assessment</h2>
+<p>Risk of self harm, violence against others or suicide.</p>
+<ul>
+<li>suicidal / homicidal ideation:
+<ul>
+<li>Does the person have thoughts, intent or plans to harm themselves or others</li>
+<li>Passive suicidal thoughts: has thoughts about death, no intent or plan to end their life</li>
+<li>Active: plans or intent to end their own life, significantly increased risk (Smith et al, 2019)</li>
+<li>Have you had thoughts of hurting yourself?</li>
+<li>Have you attempted to harm yourself in the past?</li>
+<li>Have you thought you may actually hurt yourself now? Do you have a plan to?</li>
+<li>There’s a big difference between having a thought and acting on it? Do you think you’re going to hurt yourself now/ soon?</li>
+<li>Is there anything that prevents you from harming yourself?</li>
+</ul></li>
+<li>Homicidal ideation:
+<ul>
+<li>Do you feel wronged by anyone?</li>
+<li>Are you angry at anyone right now? What would you do if they were here?</li>
+<li>Do they wish someone was dead? Or that the world/ their life would be better off without someone? (Voss &amp; Das, 2020)</li>
+</ul></li>
+</ul>
+</div>
+<div id="cognition" class="section level2">
+<h2>Cognition</h2>
+<ul>
+<li>Orientation: person place time
+<ul>
+<li>Normal alert and oriented x3</li>
+</ul></li>
+<li>Level of consciousness (LOC): (Voss &amp; Das, 2020)
+<ul>
+<li>Alert</li>
+<li>Somnolent: Drowsy LOC, easily roused/ perceive stimuli)</li>
+<li>Obtunded: Delayed response, no perception mild stimuli)</li>
+<li>Stupor: aroused by intense or noxious stimuli and fall without continued stimuli</li>
+<li>Comatose: unresponsive</li>
+</ul></li>
+<li>Comment on their ability to concentrate on the conversation/ activities</li>
+<li>Comment on their attention span on tasks or activities
+<ul>
+<li>May document their performance as good, limited, fair or poor (Voss &amp; Das, 2020)</li>
+</ul></li>
+<li>Memory
+<ul>
+<li>Remote / recent (last 24 hours) memory</li>
+<li>Do they remember events leading to their admission?</li>
+<li>Do they remember events from earlier today?</li>
+<li>Do they remember meeting you the day before?</li>
+<li>Do they remember conversations/ phone calls from earlier that day?</li>
+<li>Unrelated words test: recall of phrase or random words/ numbers after another activity (at 1 and 5 mins) to avoid repetition/ practice (Voss &amp; Das, 2020)</li>
+</ul></li>
+<li>Insight into illness: does the client understand that they present with an illness and their functionality, non- delusional. (Gatkowski, 2014; Voss &amp; Das, 2020)
+<ul>
+<li>Identify auditory hallucinations as not real = good insight (Voss &amp; Das, 2020)</li>
+<li>Patient does not realize they are experiencing paranoia about persecutory thoughts, insight is poor (Voss &amp; Das, 2020)</li>
+</ul></li>
+<li>Judgment: comment on the person’s ability to make logical decisions or think about options.
+<ul>
+<li>Can be poor, limited, fair or good (Voss &amp; Das, 2020)</li>
+<li>Abnormal findings may impair their own safety or the safety of others</li>
+<li>Poor judgment: refusal to take medications (Voss &amp; Das, 2020)</li>
+<li>Intrusive with co-patients - poor judgment</li>
+<li>Being unable to think of possible options may lead to suicidal ideation or may involve ruminating hopelessness</li>
+</ul></li>
+</ul>
+</div>
+<div id="presentations" class="section level2">
+<h2>Presentations</h2>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK558998/">Bipolar type 1</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK546579/">Psychosis</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5573566/">Anxiety</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK493168/">Mania</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6678970/">Adjustment disorder</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK556058/">Personality disorder</a>
+<ul>
+<li>Cluster A includes paranoid, schizoid, and schizotypal.
+<ul>
+<li>present: suspicious, reclusive an odd-&gt; eccentric personality</li>
+<li>paranoid: distrustful</li>
+<li>schizoids: reclusive, find difficulty in forming relationships, minimal sex drives, indifferent to praise or critique, blunted affect</li>
+<li>schizotypal: traits overlapping with schizophrenia: “bizarre behavior/speech/thought content, inappropriate affect, magical beliefs, and abnormal visual experiences” - often family history of schizophrenia or personality disorder (Fariba et al, 2020)</li>
+</ul></li>
+<li>Cluster B includes antisocial, borderline, histrionic, and narcissistic.
+<ul>
+<li>dramatic</li>
+<li>violate social norms: often fall victim to impulse-&gt; crime. Are volatile, act out, illogical temper tantrums/ act out</li>
+</ul></li>
+<li>antisocial personality disorder: abnormal childhood behavior-&gt; physical alterations peers/ adults, arson, animal cruelty, conduct diorder* -&gt; reckless, * aggressive, may go by an alias-&gt; pathological liars
+<ul>
+<li>Characterized by failure to conform to legal and social norms-&gt; manipulativeness and infringing on the rights of others</li>
+</ul></li>
+<li>Borderline personality disorder: mood instability, unstable untense relationships, uncontrollable anger, identity disturbances, fear of abandonment, self harm and chronic suicidal ideation - more then ¾ engage in self harm
+<ul>
+<li>Periods of spacing out/ dissociation during heightened stress</li>
+<li>Morphology of histrionic personality disorder comes from hyderia-&gt; associated with conversion disorder</li>
+<li>Histoeronic patients- attention seeking, overly concerned with physical appearance, attempt to be the centered of attention, difficulty of maintaining relationships, sexually promiscuous</li>
+</ul></li>
+<li>narcissistic personality disorder: self- centered, egotistical grandiosity
+<ul>
+<li>Lack empathy, overly sensitive to evaluation from others, exaggerate accomplishments, display a sense of entitlement</li>
+<li>Irritating and haughty (arrogantly superior or disdainful) and seek attention when they feel unfairly deprived or experiencing a narcissistic injury (Fariba et al, 2020)</li>
+</ul></li>
+<li>Cluster C includes avoidant, dependent, obsessive-compulsive
+<ul>
+<li>anxiety, abnormal fears, desire for untenable social relationships
+<ul>
+<li>Avoidant personality disorder-&gt; low self extreme,, overt sensitivity to criticism, feeling sof social inadequacy- hesitate from social relationships</li>
+</ul></li>
+<li>dependant personality disorder- depend on others for emotional validation</li>
+<li>Psychoanalysis perceive this state arises from a failure to progress through the oral stage of development</li>
+<li>Obsessive compulsive personality disorder: perfectionists-&gt; inflexible, overly conscientious and display mildly constricted affect</li>
+<li>More prevalent in higher echelons of education and income (Fariba et al, 2020)</li>
+</ul></li>
+<li>Evaluation of personality disorders: non- intrusively, general questions that will not create a defensive/ hostile environment
+<ul>
+<li>Lack of insight- collect data from accounts to those closest to patient -&gt; collateral best collected from police, family, parole officers</li>
+<li>Treatment:
+<ul>
+<li>lack insight- will not see behavior as being maladaptive- egosyntonic (consistent with one’s self concept-&gt; feel problem is with everyone else not self)</li>
+<li>no medications approved to treat</li>
+<li>cluster a:
+<ul>
+<li>group therapy may not be a good choice, suspicious and distrustful</li>
+<li>Individual social skills training</li>
+<li>Augmentation with second generation antipsychotics for schizoid and schizotypal types</li>
+</ul></li>
+<li>Cluster B
+<ul>
+<li>Benefit from group therapy</li>
+<li>Antisocial patients: reduced aggression main target - pharmacologic agents: lithium, valproic acid, and antipsychotics</li>
+<li>Histrionic patients benefit CBT-&gt; focus need for attention</li>
+<li>Narcissistic patients uniquely difficult, challenge and critique all therapy -&gt; ideally benefit from intensive psychodynamic psychotherapy</li>
+<li>Dialectical behavior therapy - DBT - is effective for borderline</li>
+</ul></li>
+<li>cluster C
+<ul>
+<li>CBT to address assertiveness, independence, attitude along with SSRI to address anxiety</li>
+<li>Avoidant personality disorder- Supportive psychotherapy, assertiveness, social skills training and psychodynamic psychotherapy</li>
+<li>obsessive compulsive personality disorder: psychoanalytic psychotherapy (Fariba et al, 2020)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="references" class="section level2">
+<h2>References</h2>
+<p>Gatkowski, L. (2014). Mental Status Examinatio. St. Joeph’s Healthcare Hamilton Health and Addiction Program. <a href="https://docs.google.com/document/d/1RHCPmNX2rq_oRWTBTOfZ2bZC-vovrAka/edit" class="uri">https://docs.google.com/document/d/1RHCPmNX2rq_oRWTBTOfZ2bZC-vovrAka/edit</a></p>
+<p>Jain, A., &amp; Mitra, P. (2020). Bipolar Affective Disorder. Treasure Island (FL): StatPearls Publishing</p>
+<p>Fariba, K., Gupta, V., &amp; Mitra, P. (2020). Personality Disorder. Treasure Island (FL): StatPearls Publishing</p>
+<p>Michl, L. C., McLaughlin, K. A., Shepherd, K., &amp; Nolen-Hoeksema, S. (2013). Rumination as a mechanism linking stressful life events to symptoms of depression and anxiety: Longitudinal evidence in early adolescents and adults. Journal of Abnormal Psychology, 122(2), 339–352. <a href="https://doi.org/10.1037/a0031994" class="uri">https://doi.org/10.1037/a0031994</a></p>
+<p>Norris, D., Clark, M. S., &amp; Shipley, S. (2016). The Mental Status Examination. American Family Physician, 94(8), 635–641. Registered nursing Association of Ontario. (2017). Mental Health and Addiction Resource. Retreived from <a href="https://mharesource.rnao.ca/section-five/mental-status-examination-mse-teaching-activities-and-resources" class="uri">https://mharesource.rnao.ca/section-five/mental-status-examination-mse-teaching-activities-and-resources</a></p>
+<p>Smith, R. C., D’Mello, D., Osborn, G. G., Freilich, L., Dwamena, F. C., &amp; Laird-Fick, H. S. (2019). Essentials of Psychiatry in Primary Care: Behavioral Health in the Medical Setting. McGraw Hill Professional</p>
+<p>Vieta, E., Garriga, M., Cardete, L., Bernardo, M., Lombraña, M., Blanch, J., Catalán, R., Vázquez, M., Soler, V., Ortuño, N., &amp; Martínez-Arán, A. (2017). Protocol for the management of psychiatric patients with psychomotor agitation. BMC Psychiatry, 17(1), 328. <a href="https://doi.org/10.1186/s12888-017-1490-0" class="uri">https://doi.org/10.1186/s12888-017-1490-0</a></p>
+<p>Wong, J. A., &amp; Leventhal, A. M. (2015). Smoking-related correlates of psychomotor restlessness and agitation in a community sample of daily cigarette smokers: Psychomotor Restlessness and Agitation, Smoking. The American Journal on Addictions, 24(2), 166–172. <a href="https://doi.org/10.1111/ajad.12158" class="uri">https://doi.org/10.1111/ajad.12158</a></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
